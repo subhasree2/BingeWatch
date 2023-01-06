@@ -37,7 +37,7 @@ function Main() {
                 {MoviesData.map((movie) => {
                     return (
                         <div className="Item" key={movie.id}>
-                            <img src={movie.src} />
+                            <img src={movie.src} alt="Movie Img"/>
                             <span className="Description">{movie.id}</span>
                         </div>
                     );
@@ -50,7 +50,7 @@ function Main() {
                 {LiveEvents.map((event) => {
                     return (
                         <div className="Item" key={event.id}>
-                            <img src={event.src} />
+                            <img src={event.src} alt="Event img"/>
                             <span className="Description">{event.id}</span>
                         </div>
                     );
@@ -61,7 +61,7 @@ function Main() {
                 {Premiere.map((prem) => {
                     return (
                         <div className="Item" key={prem.id}>
-                            <img src={prem.src} />
+                            <img src={prem.src} alt="Premiere Movies img"/>
                             <span className="Description">{prem.id}</span>
                         </div>
                     );
@@ -72,7 +72,7 @@ function Main() {
                 {OutdoorEvents.map((out) => {
                     return (
                         <div className="Item" key={out.id}>
-                            <img src={out.src} />
+                            <img src={out.src} alt="Outdoor Events Img"/>
                             <span className="Description">{out.id}</span>
                         </div>
                     );
@@ -83,7 +83,7 @@ function Main() {
                 {Sports.map((game) => {
                     return (
                         <div className="Item" key={game.id}>
-                            <img src={game.src} />
+                            <img src={game.src} alt="Sport Img"/>
                             <span className="Description">{game.id}</span>
                         </div>
                     );

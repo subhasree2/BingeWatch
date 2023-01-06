@@ -19,7 +19,7 @@ function Movies() {
                 {MoviesData.map((movie) => {
                     return (
                         <div className="Item" key={movie.id}>
-                            <img src={movie.src} />
+                            <img src={movie.src} alt="Movies Img"/>
                         </div>
                     );
                 })}
