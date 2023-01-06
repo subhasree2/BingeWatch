@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.Navbar {
+  height: 64px;
+  background: rgb(51, 53, 69);
+  color: white;
+  display: flex;
+  justify-content :space-between;
+  align-items :center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Navbar input {
+  width: 600px;
+  padding-left: 20px;
+  height: 40px;
+  margin-left: -30px;
+  border-radius: 4px;
+  margin-right: 20%;
+}
+
+.Navbar #SignIn {
+  background-color: red;
+  color: white;
+  height: 60%;
+  border-radius: 10%;
+  width: 7%;
+}
+
+.Navbar .title {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.Navbar button[type="submit"] {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+  width: 40px;
+  height: 37px;
+  cursor: pointer;
+}
+
+.Tabs {
+  height: 40px;
+  background-color: rgb(31, 37, 51);
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+}
+
+.Tabs a{
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  margin-right: 2%;
+}
+
+.img {
+  width: 85%;
+  height: 500px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}

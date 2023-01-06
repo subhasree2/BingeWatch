@@ -1,0 +1,78 @@
+.Main,.Wrapper {
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.Wrapper {
+    display: flex;
+    background-color: rgb(252, 247, 247);
+}
+.Item {
+    width: 85%;
+    display: inline;
+}
+
+.Item img {
+    display: inline;
+    width: 90%;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.Item img:hover{
+    scale: 1.1;
+}
+
+.Movies .Item img {
+    width: 20%;
+    margin-right: 4%;
+    margin-bottom: 2%;
+}
+
+.Movies {
+    width: 90%;
+    margin-right: -5%;
+}
+.Main h3 {
+    font-weight: bolder;
+}
+
+.Filters {
+    width: 25%;
+    margin-right: 5%;
+}
+
+.Wrapper button {
+    margin-right: 3%;
+    background-color: white;
+    padding: 2%;
+    font-size: 14px;
+    border-radius: 12%;
+    width: 40%;
+    color: rgb(240, 59, 59);
+    margin-bottom: 2%;
+    border: 1px solid rgb(190, 189, 189);
+}
+
+h6 {
+    margin-bottom: 8%;
+}
+
+.Filter {
+    background-color: white;
+    padding: 10px;
+}
+
+.Main span {
+    display: flex;
+    justify-content :baseline;
+}
+
+.Movies span {
+    position :relative;
+}
+
+.Filter i {
+    cursor: pointer;
+}
