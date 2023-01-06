@@ -36,7 +36,7 @@ function Main() {
 
                 {MoviesData.map((movie) => {
                     return (
-                        <div className="Item">
+                        <div className="Item" key={movie.id}>
                             <img src={movie.src} />
                             <span className="Description">{movie.id}</span>
                         </div>
@@ -49,7 +49,7 @@ function Main() {
 
                 {LiveEvents.map((event) => {
                     return (
-                        <div className="Item">
+                        <div className="Item" key={event.id}>
                             <img src={event.src} />
                             <span className="Description">{event.id}</span>
                         </div>
@@ -60,7 +60,7 @@ function Main() {
             <Carousel responsive={responsive}>
                 {Premiere.map((prem) => {
                     return (
-                        <div className="Item">
+                        <div className="Item" key={prem.id}>
                             <img src={prem.src} />
                             <span className="Description">{prem.id}</span>
                         </div>
@@ -71,7 +71,7 @@ function Main() {
             <Carousel responsive={responsive}>
                 {OutdoorEvents.map((out) => {
                     return (
-                        <div className="Item">
+                        <div className="Item" key={out.id}>
                             <img src={out.src} />
                             <span className="Description">{out.id}</span>
                         </div>
@@ -82,7 +82,7 @@ function Main() {
             <Carousel responsive={responsive}>
                 {Sports.map((game) => {
                     return (
-                        <div className="Item">
+                        <div className="Item" key={game.id}>
                             <img src={game.src} />
                             <span className="Description">{game.id}</span>
                         </div>

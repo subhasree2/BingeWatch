@@ -18,7 +18,7 @@ function Movies() {
                 <h3>Movies in Chennai</h3>
                 {MoviesData.map((movie) => {
                     return (
-                        <div className="Item">
+                        <div className="Item" key={movie.id}>
                             <img src={movie.src} />
                         </div>
                     );

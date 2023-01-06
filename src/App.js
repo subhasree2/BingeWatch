@@ -3,7 +3,6 @@ import "./assets/App.css";
 import "./assets/Main.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import MainCarousel from "./components/Carousel";
 
 // Lazy loading
 const Main = lazy(() => import("./pages/Main"));
