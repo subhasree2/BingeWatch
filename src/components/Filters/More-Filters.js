@@ -13,12 +13,12 @@ export const MoreFilters = () => {
             {show &&
                 <div className="tags">
                     {
-                        Filters[5].Data.map((lang) => {
+                        Filters.find((filter) => filter.id === "More").Data.map((more) => {
                             return (
                                 <>
                                     <label>
                                         <input type="checkbox" />
-                                        <span>{lang}</span>
+                                        <span>{more}</span>
                                     </label>
                                 </>
                             )

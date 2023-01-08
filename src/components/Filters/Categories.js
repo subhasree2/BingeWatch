@@ -3,23 +3,24 @@ import Filters from "../../store/FilterOptions";
 
 export const Categories = () => {
     const [show, setVisibility] = useState(false);
+
     return (
         <div className="Filter">
-            <h6 style={{ color: "rgb(240, 59, 59)" }} onClick={() => { setVisibility((prev) => !(prev))}}>
+            <h6 style={{ color: "rgb(240, 59, 59)" }} onClick={() => { setVisibility((prev) => !(prev)) }}>
                 {!show ?
-                    <i class="bi bi-chevron-compact-down"/> : 
-                    <i class="bi bi-chevron-compact-up"/>}
+                    <i class="bi bi-chevron-compact-down" /> :
+                    <i class="bi bi-chevron-compact-up" />}
                 &nbsp;Categories</h6>
 
             {show &&
                 <div className="tags">
                     {
-                        Filters[1].Data.map((lang) => {
+                        Filters.find((filter) => filter.id === "Categories").Data.map((cat) => {
                             return (
                                 <>
                                     <label>
                                         <input type="checkbox" />
-                                        <span>{lang}</span>
+                                        <span>{cat}</span>
                                     </label>
                                 </>
                             )

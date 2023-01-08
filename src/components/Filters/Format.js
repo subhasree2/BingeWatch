@@ -14,12 +14,12 @@ export const Format = () => {
             {show &&
                 <div className="tags">
                     {
-                        Filters[3].Data.map((lang) => {
+                        Filters.find((filter) => filter.id === "Format").Data.map((format) => {
                             return (
                                 <>
                                     <label>
                                         <input type="checkbox" />
-                                        <span>{lang}</span>
+                                        <span>{format}</span>
                                     </label>
                                 </>
                             )

@@ -15,7 +15,7 @@ export const Languages = () => {
             {show &&
                 <div className="tags">
                     {
-                        Filters[0].Data.map((lang) => {
+                        Filters.find((filter) => filter.id === "Languages").Data.map((lang) => {
                             return (
                                 <>
                                     <label>

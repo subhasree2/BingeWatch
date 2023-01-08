@@ -6,6 +6,7 @@ import Sports from "../store/Sports";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import MainCarousel from "../components/Carousel/Carousel";
+import { Link } from "react-router-dom";
 
 function Main() {
     const responsive = {
@@ -36,7 +37,9 @@ function Main() {
                 {MoviesData.map((movie) => {
                     return (
                         <div className="Item" key={movie.id}>
-                            <img src={movie.src} alt="Movie Img" />
+                            <Link to={`/movies/${movie.id}`}>
+                                <img src={movie.src} alt="Movie Img" />
+                            </Link>
                             <span className="Description">{movie.id}</span>
                             <span><i>Ratings : {movie.Ratings}</i></span>
                         </div>
@@ -87,7 +90,7 @@ function Main() {
                     );
                 })}
             </Carousel><br /><br />
-            
+
             <h3>Top Games & Sports Events</h3>
             <Carousel responsive={responsive}>
                 {Sports.map((game) => {

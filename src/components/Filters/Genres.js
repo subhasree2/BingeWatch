@@ -14,12 +14,12 @@ export const Genres = () => {
             {show &&
                 <div className="tags">
                     {
-                        Filters[4].Data.map((lang) => {
+                        Filters.find((filter) => filter.id === "Genres").Data.map((Genre) => {
                             return (
                                 <>
                                     <label>
                                         <input type="checkbox" />
-                                        <span>{lang}</span>
+                                        <span>{Genre}</span>
                                     </label>
                                 </>
                             )

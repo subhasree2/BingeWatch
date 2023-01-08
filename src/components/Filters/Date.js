@@ -14,12 +14,12 @@ export const Date = () => {
             {show &&
                 <div className="tags">
                     {
-                        Filters[2].Data.map((lang) => {
+                        Filters.find((filter) => filter.id === "Date").Data.map((date) => {
                             return (
                                 <>
                                     <label>
                                         <input type="checkbox" />
-                                        <span>{lang}</span>
+                                        <span>{date}</span>
                                     </label>
                                 </>
                             )
