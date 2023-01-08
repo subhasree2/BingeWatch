@@ -3,9 +3,7 @@ import { Genres } from "../components/Filters/Genres";
 import { Format } from "../components/Filters/Format";
 import MoviesData from "../store/Movies";
 import MainCarousel from "../components/Carousel/Carousel";
-import { Link, Route, Routes } from "react-router-dom";
-import MovieDetails from "../components/MovieDetails";
-import { Carousel } from "bootstrap";
+import { Link } from "react-router-dom";
 
 function Movies() {
     return (

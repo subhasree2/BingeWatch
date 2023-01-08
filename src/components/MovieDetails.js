@@ -1,5 +1,4 @@
-import MainCarousel from "./Carousel/Carousel";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import MoviesData from "../store/Movies";
 
 function MovieDetails() {
