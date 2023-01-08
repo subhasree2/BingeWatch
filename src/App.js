@@ -11,8 +11,8 @@ const Stream = lazy(() => import("./pages/Stream"));
 const Event = lazy(() => import("./pages/Event"));
 const Plays = lazy(() => import("./pages/Plays"));
 const Sports = lazy(() => import("./pages/Sports"));
-const Activities = lazy(() => import("./pages/Activities"));
-const Buzz = lazy(() => import("./pages/Buzz"));
+const Gift = lazy(() => import("./pages/Gift"));
+const Offers = lazy(() => import("./pages/Offers"));
 
 function App() {
 
@@ -29,8 +29,8 @@ function App() {
             <Route path="/event" element={<Event />} />
             <Route path="/play" element={<Plays />} />
             <Route path="/sport" element={<Sports />} />
-            <Route path="/activities" element={<Activities />} />
-            <Route path="/buzz" element={<Buzz />} />
+            <Route path="/offers" element={<Offers />} />
+            <Route path="/gift" element={<Gift />} />
           </Routes>
         </Suspense>
       </Router>

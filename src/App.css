@@ -301,3 +301,23 @@ h6 {
 .red {
   width: 200px;
 }
+
+.Offers img {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.OfferCard img{
+  width: 370px;
+  height: 200px;
+}
+
+.Gifts {
+  margin-left: 10%;
+}
+.Gifts img{
+  height: 200px;
+  margin-top: 10px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
