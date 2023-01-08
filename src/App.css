@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.Navbar {
+  height: 64px;
+  background: rgb(51, 53, 69);
+  color: white;
+  display: flex;
+  justify-content :space-between;
+  align-items :center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.Navbar input {
+  width: 600px;
+  padding-left: 20px;
+  height: 40px;
+  margin-left: -30px;
+  border-radius: 4px;
+  margin-right: 20%;
+}
+
+.Navbar #SignIn {
+  background-color: red;
+  color: white;
+  height: 60%;
+  border-radius: 10%;
+  width: 7%;
+}
+
+.Navbar .title {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.Navbar button[type="submit"] {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+  width: 40px;
+  height: 37px;
+  cursor: pointer;
+}
+
+.Tabs {
+  height: 40px;
+  background-color: rgb(31, 37, 51);
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+}
+
+.Tabs a{
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  margin-right: 2%;
+}
+
+.img {
+  width: 85%;
+  height: 500px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup {
+  margin-top: 5%;
+  padding: 3%;
+  background-color: rgb(31, 37, 51);
+  color: white;
+  height: 70vh;
+  border: 2px solid black;
+  width: 35%;
+  display: flex;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup button{
+  display: block;
+  margin-bottom: 10%;
+  padding: 3%;
+  width: 100%;
+  border-radius: 3%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content i{
+  margin-right: 10px;
+}
+
+.content .bi-x-lg {
+  position: relative;
+  right: -35%;
+  cursor: pointer;
+}
+
+.content h4{
+  font-weight: bold;
+  margin-bottom: 7%;
+}
+
+.Main .banner {
+  margin-top: 80px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.Main,.Wrapper {
+  margin-top: 3%;
+  padding-left: 3%;
+  padding-right:3%;
+}
+
+.Wrapper {
+  display: flex;
+  background-color: rgb(252, 247, 247);
+}
+.Item {
+  width: 85%;
+  display: inline;
+}
+
+.Item img {
+  margin-top: 2%;
+  display: inline;
+  width: 90%;
+  margin-bottom: 7%;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.Item img:hover{
+  scale: 1.1;
+}
+
+.Movies .Item img {
+  width: 20%;
+  margin-right: 4%;
+  margin-bottom: 2%;
+}
+
+.Movies {
+  width: 90%;
+  margin-right: -5%;
+}
+.Main h3 {
+  font-weight: bolder;
+}
+
+.Filters {
+  width: 25%;
+  margin-right: 5%;
+}
+
+.Wrapper button {
+  background-color: white;
+  padding: 7px 7px;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 16px;
+  width: 40%;
+  margin: 4px 2px;
+  color: rgb(240, 59, 59);
+  border: 1px solid rgb(190, 189, 189);
+}
+
+h6 {
+  margin-bottom: 8%;
+}
+
+.Filter {
+  background-color: white;
+  padding: 10px;
+}
+
+.Main span {
+  display: flex;
+  justify-content :baseline;
+}
+
+.Movies span {
+  position :relative;
+}
+
+.Filter h6 {
+  cursor: pointer;
+}
+
+.Main .Description {
+  color : rgb(6, 6, 184);
+}
+
+.Movies {
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+.Filter .tags label input[type="checkbox"] {
+  display: none;
+}
+
+.Filter .tags input[type="checkbox"] :checked ~ span{
+  background: red;
+}
+
+.Filter .tags span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 15px;
+  color: red;
+  border: 1px groove grey;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+  user-select: none;
+}
+
+.Filter .tags span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.Filter h5{
+  margin-bottom: 10%;
+}
+
+.sport {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.Sports img {
+  width: 20%;
+  margin-right: 2%;
+  margin-top: 2%;
+}

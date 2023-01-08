@@ -5,12 +5,11 @@ import OutdoorEvents from "../store/Outdoor-Events";
 import Sports from "../store/Sports";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import MainCarousel from "../components/Carousel";
+import MainCarousel from "../components/Carousel/Carousel";
 
 function Main() {
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5,
         },
@@ -30,61 +29,73 @@ function Main() {
 
     return (
         <div className="Main">
-            <MainCarousel />
+            <MainCarousel /> <br />
             <h3>Recommended Movies</h3>
             <Carousel responsive={responsive}>
 
                 {MoviesData.map((movie) => {
                     return (
                         <div className="Item" key={movie.id}>
-                            <img src={movie.src} alt="Movie Img"/>
+                            <img src={movie.src} alt="Movie Img" />
                             <span className="Description">{movie.id}</span>
+                            <span><i>Ratings : {movie.Ratings}</i></span>
                         </div>
                     );
                 })}
+
             </Carousel>
             <br /><br />
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png" className="banner" alt="banner" />
+
             <h3>The Best of Live Events</h3>
             <Carousel responsive={responsive}>
 
                 {LiveEvents.map((event) => {
                     return (
                         <div className="Item" key={event.id}>
-                            <img src={event.src} alt="Event img"/>
+                            <img src={event.src} alt="Event img" />
                             <span className="Description">{event.id}</span>
                         </div>
                     );
                 })}
             </Carousel><br /><br />
-            <h3>Premiere</h3>
-            <Carousel responsive={responsive}>
-                {Premiere.map((prem) => {
-                    return (
-                        <div className="Item" key={prem.id}>
-                            <img src={prem.src} alt="Premiere Movies img"/>
-                            <span className="Description">{prem.id}</span>
-                        </div>
-                    );
-                })}
-            </Carousel><br /><br />
+
+            <div className="Premiere">
+                <h3>Premiere</h3>
+                <Carousel responsive={responsive}>
+                    {Premiere.map((prem) => {
+                        return (
+                            <div className="Item" key={prem.id}>
+                                <img src={prem.src} alt="Premiere Movies img" />
+                                <span className="Description">{prem.id}</span>
+                                <span><i>{prem.Language}</i></span>
+                            </div>
+                        );
+                    })}
+                </Carousel><br /><br />
+            </div>
+
             <h3>Outdoor Events</h3>
             <Carousel responsive={responsive}>
                 {OutdoorEvents.map((out) => {
                     return (
                         <div className="Item" key={out.id}>
-                            <img src={out.src} alt="Outdoor Events Img"/>
+                            <img src={out.src} alt="Outdoor Events Img" />
                             <span className="Description">{out.id}</span>
+                            <span><i>{out.Place}</i></span>
                         </div>
                     );
                 })}
             </Carousel><br /><br />
+            
             <h3>Top Games & Sports Events</h3>
             <Carousel responsive={responsive}>
                 {Sports.map((game) => {
                     return (
                         <div className="Item" key={game.id}>
-                            <img src={game.src} alt="Sport Img"/>
+                            <img src={game.src} alt="Sport Img" />
                             <span className="Description">{game.id}</span>
+                            <span><i>{game.Place}</i></span>
                         </div>
                     );
                 })}

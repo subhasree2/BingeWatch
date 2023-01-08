@@ -1,23 +1,30 @@
 import { useState } from "react";
+import Filters from "../../store/FilterOptions";
 
 export const Format = () => {
     const [show, setVisibility] = useState(false);
     return (
         <div className="Filter">
-            <h6 style={{ color: "rgb(240, 59, 59)" }}>
-            {!show ?
-                    <i class="bi bi-chevron-compact-down"
-                        onClick={() => { setVisibility((prev) => !(prev)); }} /> : <i class="bi bi-chevron-compact-up"
-                            onClick={() => { setVisibility((prev) => !(prev)); }} />}
+            <h6 style={{ color: "rgb(240, 59, 59)" }} onClick={() => { setVisibility((prev) => !(prev))}}>
+                {!show ?
+                    <i class="bi bi-chevron-compact-down"/> : 
+                    <i class="bi bi-chevron-compact-up"/>}
                 &nbsp;Format</h6>
 
             {show &&
                 <div className="tags">
-                    <button>2D</button>
-                    <button>3D</button>
-                    <button>7D</button>
-                    <button>4DX 3D</button>
-                    <button>IMAX 3D</button>
+                    {
+                        Filters[3].Data.map((lang) => {
+                            return (
+                                <>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>{lang}</span>
+                                    </label>
+                                </>
+                            )
+                        })
+                    }
                 </div>
             }
         </div>

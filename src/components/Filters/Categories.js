@@ -1,33 +1,30 @@
 import { useState } from "react";
+import Filters from "../../store/FilterOptions";
 
 export const Categories = () => {
     const [show, setVisibility] = useState(false);
     return (
         <div className="Filter">
-            <h6 style={{ color: "rgb(240, 59, 59)" }}>
+            <h6 style={{ color: "rgb(240, 59, 59)" }} onClick={() => { setVisibility((prev) => !(prev))}}>
                 {!show ?
-                    <i class="bi bi-chevron-compact-down"
-                        onClick={() => { setVisibility((prev) => !(prev)); }} /> : <i class="bi bi-chevron-compact-up"
-                            onClick={() => { setVisibility((prev) => !(prev)); }} />}
+                    <i class="bi bi-chevron-compact-down"/> : 
+                    <i class="bi bi-chevron-compact-up"/>}
                 &nbsp;Categories</h6>
 
             {show &&
-
                 <div className="tags">
-                    <button>Workshops</button>
-                    <button>Comedy Shows</button>
-                    <button>Online Streaming Events</button>
-                    <button>Music Shows</button>
-                    <button>Meetups</button>
-                    <button>Performances</button>
-                    <button>Kids</button>
-                    <button>Exhibitions</button>
-                    <button>Spirituality</button>
-                    <button>Conferences</button>
-                    <button>Screening</button>
-                    <button>Award Shows</button>
-                    <button>Celebrity Wishes</button>
-                    <button>Talks</button>
+                    {
+                        Filters[1].Data.map((lang) => {
+                            return (
+                                <>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>{lang}</span>
+                                    </label>
+                                </>
+                            )
+                        })
+                    }
                 </div>
             }
         </div>

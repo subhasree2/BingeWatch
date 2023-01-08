@@ -3,6 +3,7 @@ import { Languages } from "../components/Filters/Languages";
 import { Categories } from "../components/Filters/Categories";
 import { MoreFilters } from "../components/Filters/More-Filters";
 import { Price } from "../components/Filters/Price";
+import OutdoorEvents from "../store/Outdoor-Events";
 
 function Event() {
     return (
@@ -13,6 +14,16 @@ function Event() {
                 <Categories /> <br /> 
                 <MoreFilters /> <br /> 
                 <Price /> <br />
+            </div>
+            <div className="Movies">
+                <h3>Outdoor Events in Chennai</h3>
+                {OutdoorEvents.map((event) => {
+                    return (
+                        <div className="Item" key={event.id}>
+                            <img src={event.src} alt="Events Img"/>
+                        </div>
+                    );
+                })}
             </div>
         </div>
     )

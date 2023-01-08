@@ -1,6 +1,5 @@
-import React, { lazy, Suspense } from "react";
-import "./assets/App.css";
-import "./assets/Main.css";
+import React, { lazy, Suspense, useState } from "react";
+import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 
@@ -15,13 +14,15 @@ const Activities = lazy(() => import("./pages/Activities"));
 const Buzz = lazy(() => import("./pages/Buzz"));
 
 function App() {
+  const [Visible, setVisible] = useState(false);
+
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar IsVisible={Visible} setVisible={setVisible} />
         <Suspense fallback={<h1>Loading</h1>}>
           <Routes>
-            <Route path="/" element={<Main />} />
+            {!Visible && <Route path="/" element={<Main />} />}
             <Route path="/movies" element={<Movies />} />
             <Route path="/stream" element={<Stream />} />
             <Route path="/event" element={<Event />} />

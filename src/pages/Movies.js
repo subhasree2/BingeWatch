@@ -2,7 +2,7 @@ import { Languages } from "../components/Filters/Languages";
 import { Genres } from "../components/Filters/Genres";
 import { Format } from "../components/Filters/Format";
 import MoviesData from "../store/Movies";
-import MainCarousel from "../components/Carousel";
+import MainCarousel from "../components/Carousel/Carousel";
 
 function Movies() {
     return (
@@ -14,6 +14,7 @@ function Movies() {
                 <Genres /><br />
                 <Format /><br />
             </div>
+            
             <div className="Movies">
                 <h3>Movies in Chennai</h3>
                 {MoviesData.map((movie) => {
