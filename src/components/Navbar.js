@@ -10,7 +10,7 @@ export const Navbar = () => {
 
     // Sign In 
     const SignInWithGoogle = async () => {
-        const result = await signInWithPopup(auth, provider);
+        await signInWithPopup(auth, provider);
         setOpen(false);
         navigate("/");
     }
