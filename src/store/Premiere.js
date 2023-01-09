@@ -1,6 +1,7 @@
 const Premiere = [
   {
-    id: "Black Adam",
+    id: 1, 
+    Movie : "Black Adam",
     Format: "4K",
     Language: "English, Audio(4), Subtitles(1)",
     Duration: "2h 5m",
@@ -10,7 +11,8 @@ const Premiere = [
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:q-80/et00117411-zmudrhhzzz-portrait.jpg",
   },
   {
-    id: "Top Gun : Maverick",
+    id: 2,
+    Movie : "Top Gun : Maverick",
     Language: "English, Audio(4), Subtitles(1)",
     Duration: "2h 11m",
     Genre: "Action, Drama",
@@ -19,7 +21,8 @@ const Premiere = [
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:q-80/et00076943-smkpwvadsk-portrait.jpg",
   },
   {
-    id: "Tumi O Tumi",
+    id: 3, 
+    Movie : "Tumi O Tumi",
     Language: "Bengali, Audio(1), Subtitles(1)",
     Duration: "2h 2m",
     Genre: "Drama",
@@ -28,7 +31,8 @@ const Premiere = [
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00119947-ednhelsdft-portrait.jpg",
   },
   {
-    id: "Detection of Di-Renji",
+    id: 4, 
+    Movie : "Detection of Di-Renji",
     Language: "Mandarin, Audio(4), Subtitles(1)",
     Duration: "1h 33m",
     Genre: "Action, Mystery, Thriller",
@@ -37,7 +41,8 @@ const Premiere = [
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@bms_premiere_v1.png,oit-false,ofo-bottom_left:q-80/et00338333-xmuuathedf-portrait.jpg",
   },
   {
-    id: "Nightmare Neighborhoud Moms",
+    id: 5, 
+    Movie : "Nightmare Neighborhoud Moms",
     Language: "English, Audio(1), Subtitles(1)",
     Genre: "Drama, Thriller",
     Date: "8 Apr, 2020",
@@ -46,7 +51,8 @@ const Premiere = [
     src: "https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/nightmare-neighborhood-moms-et00347059-1670850284.jpg",
   },
   {
-    id: "Ebhabei Golpo Hok",
+    id: 6, 
+    Movie : "Ebhabei Golpo Hok",
     Language: "Bengali, Audio(1), Subtitles(1)",
     Genre: "Drama",
     Date: "15 Oct, 2020",
@@ -55,7 +61,8 @@ const Premiere = [
     src: "https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/ebhabei-golpo-hok-et00145596-1672997391.jpg",
   },
   {
-    id: "Ticket to Paradise",
+    id: 7, 
+    Movie : "Ticket to Paradise",
     Language: "English, Audio(2), Subtitles(1)",
     Genre: "Comedy, Romantic",
     Date: "6 Oct, 2022",
@@ -64,7 +71,8 @@ const Premiere = [
     src: "https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/ticket-to-paradise-et00338333-1672044076.jpg",
   },
   {
-    id: "Secret Headquarters",
+    id: 8, 
+    Movie : "Secret Headquarters",
     Language: "English, Audio(2), Subtitles(1)",
     Genre: "Action, Adventure, Comedy",
     Date: "12 Aug, 2022",

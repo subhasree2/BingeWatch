@@ -5,7 +5,7 @@ function PremiereDetails() {
 
     // Retrieving premiere movie name from the URL
     const { id } = useParams();
-    const Premovie = Premiere.find((pre) => pre.id === id);
+    const Premovie = Premiere.find((pre) => pre.Movie === id);
 
     return (
         <div className="Details">
@@ -14,7 +14,7 @@ function PremiereDetails() {
                     <img src={Premovie.src} alt={Premovie.id} />
                 </div>
                 <div className="Content">
-                    <h2>{Premovie.id}</h2>
+                    <h2>{Premovie.Movie}</h2>
                     <ul>
                         <li>Languages : {Premovie.Language}</li>
                         <li>Duration : {Premovie.Duration}</li>

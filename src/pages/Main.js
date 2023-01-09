@@ -84,10 +84,10 @@ function Main() {
                             <div className="Item" key={prem.id}>
 
                                 {/* Redirecting to the specific premiere movie page */}
-                                <Link to={`/stream/${prem.id}`}>
+                                <Link to={`/stream/${prem.Movie}`}>
                                     <img src={prem.src} alt="Premiere Movies img" />
                                 </Link>
-                                <span className="Description">{prem.id}</span>
+                                <span className="Description">{prem.Movie}</span>
                                 <span><i>{prem.Language}</i></span>
                             </div>
                         );

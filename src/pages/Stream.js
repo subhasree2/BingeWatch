@@ -11,7 +11,7 @@ const Stream = () => {
                 {Premiere.map((prem) => {
                     return (
                         <div className="Item" key={prem.id}>
-                            <Link to={`/stream/${prem.id}`}>
+                            <Link to={`/stream/${prem.Movie}`}>
                                 <img src={prem.src} alt="Premiere Movies img" />
                             </Link>
                         </div>
