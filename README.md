@@ -3,10 +3,10 @@
 - In Progress
 
 ### FrontEnd :-
-  HTML, CSS, Javascript, ReactJS, React-Bootstrap 
+    HTML, CSS, Javascript, ReactJS, React-Bootstrap 
 
 ### Netlify :- 
-  https://bookmyshow-iamneo.netlify.app/
+    https://bookmyshow-iamneo.netlify.app/
 
 ### Sonarcloud :- 
-  https://sonarcloud.io/project/overview?id=subhasree2_BookMyShow-Clone
+    https://sonarcloud.io/project/overview?id=subhasree2_BookMyShow-Clone
