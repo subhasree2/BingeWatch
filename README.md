@@ -1,4 +1,5 @@
-# BookMyShow-Clone
+# BingeWatch 
+
 - This is a clone of the bookMyshow website 
 - In Progress
 
