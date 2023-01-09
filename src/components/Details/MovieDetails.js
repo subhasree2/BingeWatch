@@ -23,6 +23,7 @@ function MovieDetails() {
                         <li>Genre : {movie.Genre}</li>
                         <li>Date : {movie.Date}</li>
                     </ul>
+                    <div>{movie.Info}</div>
 
                     <div className="buttons">
                         <button className="book">Book Tickets</button>

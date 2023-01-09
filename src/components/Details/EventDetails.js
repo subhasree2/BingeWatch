@@ -17,6 +17,7 @@ function EventDetails() {
                     <h2>{event.Event}</h2>
                     <div>{event.Place}</div>
                     <div>{event.Date}</div>
+                    <div>{event.Info}</div>
                     <button className="Event">Book Tickets</button>
                 </div>
             </div>

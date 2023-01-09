@@ -21,7 +21,7 @@ function PremiereDetails() {
                         <li>Genre : {Premovie.Genre}</li>
                         <li>Date : {Premovie.Date}</li>
                     </ul>
-
+                    <div>{Premovie.Info}</div>
                     <div className="buttons">
                         <button className="book">Book Rs.{Premovie.Cost}</button>
                     </div>

@@ -8,6 +8,7 @@ const MoviesData = [
     Duration: "3h 12m",
     Genre: "Action, Adventure, Fantasy, Sci-Fi",
     Date: "16 Dec, 2022",
+    Info: "Set more than a decade after the events of the first film, `Avatar The Way of Water` begins to tell the story of the Sully family (Jake, Neytiri and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive and the tragedies they endure.",
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC43LzEwICAxNzEuOEsgdm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00037264-njdelwmrpl-portrait.jpg",
   },
   {
@@ -19,6 +20,7 @@ const MoviesData = [
     Duration: "1h 39m",
     Genre: "Horror, Thriller",
     Date: "22 Dec, 2022",
+    Info: "During the COVID-19 lockdown in India, a single mother notices strange changes in her daughter`s behavior after she tests positive with the virus. The mother tries to get medical help, but has no luck. Desperate for a solution, she seeks help from an old priest, who suggests a virtual exorcism over a zoom call.",
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ni40LzEwICA1LjdLIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00345156-pdacdkazal-portrait.jpg",
   },
   {
@@ -30,6 +32,7 @@ const MoviesData = [
     Duration: "2h 21m",
     Genre: "Drama",
     Date: "30 Dec, 2022",
+    Info: "Sembi is a Tamil movie starring Ashwin Kumar Lakshmikanthan and Kovai Sarala in prominent roles. It is a drama directed by Prabhu Solomon forming part of the crew.If you are a representative of the production house, please share the details of the film with synopsis@bookmyshow.com",
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC45LzEwICAyLjFLIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00330396-kzazfmpaqe-portrait.jpg",
   },
   {
@@ -41,6 +44,7 @@ const MoviesData = [
     Duration: "2h 2m",
     Genre: "Drama",
     Date: "30 Dec, 2022",
+    Info: "Directed by Saravanan, Raangi is a Tamil movie starring Trisha in a prominent role. If you are a representative of the production house, please share the details of the film with synopsis@bookmyshow.com",
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny4zLzEwICAxSyB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00103370-kpbpnpnrtv-portrait.jpg",
   },
   {
@@ -52,6 +56,7 @@ const MoviesData = [
     Duration: "1h 44m",
     Genre: "Crime, Thriller",
     Date: "30 Dec, 2022",
+    Info: "Jamuna, a woman taxi driver living near the outskirts of Chennai faces unexpected situations on a day trip. What will happen when she attempts to safeguard herself?",
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny40LzEwICAyLjhLIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00330656-vdgxhtzdcf-portrait.jpg",
   },
   {
@@ -63,6 +68,7 @@ const MoviesData = [
     Duration: "2h 7m",
     Genre: "Crime, Drama",
     Date: "6 Jan, 2023",
+    Info: "V3 is a fight against an injustice on a gang rape-murder case. While the system fails initially due to the undue pressure, can poetic justice be achieved?",
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MS40SyBsaWtlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00348420-lxhtfblnew-portrait.jpg",
   },
   {
@@ -74,6 +80,7 @@ const MoviesData = [
     Duration: "2h 24m",
     Genre: "Action, Drama",
     Date: "22 Dec, 2022",
+    Info: "Muruganantham is a suspended police constable who hits Vellai unaware he is the son of a notorious don. He is forced to confront the villains as his son is being exposed to villainy. Can he save his family and himself?",
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ny41LzEwICA4LjlLIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00329275-hesbfpqced-portrait.jpg",
   },
   {
@@ -85,6 +92,7 @@ const MoviesData = [
     Duration: "2h 26m",
     Genre: "Drama, Sports",
     Date: "2 Dec, 2022",
+    Info: "Veera, a male chauvinist, is seeking a bride with his own preconceived set of conditions. However, he unexpectedly ends up marrying Keerthi who is a polar opposite to his expectations. What will happen when the truth is revealed?",
     src: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC44LzEwICA5LjFLIHZvdGVz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00326206-xtexnvyykv-portrait.jpg",
   },
 ];
