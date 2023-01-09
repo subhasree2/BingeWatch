@@ -1,5 +1,6 @@
 import Premiere from "../store/Premiere";
 import MainCarousel from "../components/Carousel/Carousel";
+import { Link } from "react-router-dom";
 
 const Stream = () => {
     return (
@@ -10,7 +11,9 @@ const Stream = () => {
                 {Premiere.map((prem) => {
                     return (
                         <div className="Item" key={prem.id}>
-                            <img src={prem.src} alt="Premiere Movies img"/>
+                            <Link to={`/stream/${prem.id}`}>
+                                <img src={prem.src} alt="Premiere Movies img" />
+                            </Link>
                         </div>
                     );
                 })}

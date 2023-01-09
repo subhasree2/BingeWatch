@@ -11,11 +11,11 @@ function Event() {
         <div className="Wrapper">
             <div className="Filters">
                 <Date /> <br />
-                <Languages /> <br /> 
+                <Languages /> <br />
                 <Categories /> <br />
-                <Genres /> <br /> 
+                <Genres /> <br />
                 <MoreFilters /> <br />
-                <Price /> 
+                <Price />
             </div>
 
             <div className="Movies">
@@ -23,7 +23,7 @@ function Event() {
                 {OutdoorEvents.map((event) => {
                     return (
                         <div className="Item" key={event.id}>
-                            <img src={event.src} alt="Events Img"/>
+                            <img src={event.src} alt="Events Img" />
                         </div>
                     );
                 })}

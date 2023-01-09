@@ -2,7 +2,8 @@ import React, { lazy, Suspense } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import MovieDetails from "./components/MovieDetails";
+import MovieDetails from "./components/Details/MovieDetails";
+import PremiereDetails from "./components/Details/PremiereDetails";
 
 // Lazy loading
 const Main = lazy(() => import("./pages/Main"));
@@ -26,6 +27,7 @@ function App() {
             <Route path="/movies" element={<Movies />} />
             <Route path="/movies/:id" element={<MovieDetails />} />
             <Route path="/stream" element={<Stream />} />
+            <Route path="/stream/:id" element={<PremiereDetails />} />
             <Route path="/event" element={<Event />} />
             <Route path="/play" element={<Plays />} />
             <Route path="/sport" element={<Sports />} />

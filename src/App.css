@@ -7,6 +7,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/* Navbar styles */
 .Navbar {
   height: 64px;
   background: rgb(51, 53, 69);
@@ -50,6 +51,7 @@ body {
   cursor: pointer;
 }
 
+/* Styling Tabs */
 .Tabs {
   height: 40px;
   background-color: rgb(31, 37, 51);
@@ -67,6 +69,7 @@ body {
   margin-right: 2%;
 }
 
+/* Styling Image for all items like movies, sports, plays */
 .img {
   width: 85%;
   height: 500px;
@@ -75,6 +78,7 @@ body {
   margin-right: auto;
 }
 
+/* Styling popup for signUp */
 .popup {
   padding: 3%;
   background-color: rgb(31, 37, 51);
@@ -127,22 +131,28 @@ body {
   margin-bottom: 7%;
 }
 
+
+/* Styling the banner image in main page */
 .Main .banner {
   margin-top: 80px;
   width: 100%;
   margin-bottom: 80px;
 }
 
+/* Styling the Wrapper div in each page */
 .Main,.Wrapper {
   margin-top: 3%;
   padding-left: 3%;
   padding-right:3%;
 }
 
+
 .Wrapper {
   display: flex;
   background-color: rgb(252, 247, 247);
 }
+
+/* Styling the items of each pages */
 .Item {
   width: 85%;
   display: inline;
@@ -177,6 +187,8 @@ body {
   font-weight: bolder;
 }
 
+
+/* Styling the filters */
 .Filters {
   width: 25%;
   margin-right: 5%;
@@ -251,6 +263,8 @@ h6 {
   margin-bottom: 10%;
 }
 
+
+/* Styling the sports page */
 .sport {
   margin-left: auto;
   margin-right: auto;
@@ -263,6 +277,7 @@ h6 {
   margin-top: 2%;
 }
 
+/* Styling the movie specific page */
 .MainFrame {
   display: flex;
   padding: 10%;
@@ -302,6 +317,8 @@ h6 {
   width: 200px;
 }
 
+
+/* Styling the offers page */
 .Offers img {
   margin-top: 2%;
   margin-left: 5%;
@@ -312,6 +329,8 @@ h6 {
   height: 200px;
 }
 
+
+/* Styling the gifts page */
 .Gifts {
   margin-left: 10%;
 }

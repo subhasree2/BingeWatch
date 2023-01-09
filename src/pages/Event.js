@@ -11,16 +11,19 @@ function Event() {
             <div className="Filters">
                 <Date /> <br />
                 <Languages /> <br />
-                <Categories /> <br /> 
-                <MoreFilters /> <br /> 
+                <Categories /> <br />
+                <MoreFilters /> <br />
                 <Price /> <br />
             </div>
-            <div className="Movies">
+
+
+            {/* Displaying the Events */}
+            <div className="Events">
                 <h3>Outdoor Events in Chennai</h3>
                 {OutdoorEvents.map((event) => {
                     return (
                         <div className="Item" key={event.id}>
-                            <img src={event.src} alt="Events Img"/>
+                            <img src={event.src} alt="Events Img" />
                         </div>
                     );
                 })}

@@ -2,19 +2,24 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Modal from "./Modal";
 import { auth, provider } from "../config/firebase";
-import { signInWithPopup ,signOut} from "firebase/auth";
+import { signInWithPopup, signOut } from "firebase/auth";
 
 export const Navbar = () => {
     const navigate = useNavigate();
     const [isOpen, setOpen] = useState(false);
 
+    // Sign In 
     const SignInWithGoogle = async () => {
         const result = await signInWithPopup(auth, provider);
-        result.user ? setOpen(false) : setOpen(true);
+        setOpen(false);
+        navigate("/");
     }
 
+    // Sign Out
     const signUserOut = async () => {
         await signOut(auth);
+        console.log("successful");
+        navigate("/");
     }
 
     return (
@@ -24,13 +29,14 @@ export const Navbar = () => {
                 <input type="search" placeholder="Search for Movies, Events, Plays, Sports and Activities" />
                 <span>{auth.currentUser?.displayName}</span>
                 <span className="place">Chennai</span>
-                {!auth.currentUser &&
-                    <button id="SignIn" onClick={() => setOpen(true)}>Sign In</button>}
-                {auth.currentUser &&
+                {!auth.currentUser?.displayName ?
+                    <button id="SignIn" onClick={() => setOpen(true)}>Sign In</button> :
                     <button id="SignIn" onClick={() => signUserOut}>Logout</button>
                 }
             </div>
 
+
+            {/* Tabs / Links */}
             <div className="Tabs">
                 <Link to="/movies">Movies</Link>
                 <Link to="/stream">Stream</Link>
@@ -41,6 +47,8 @@ export const Navbar = () => {
                 <Link to="/gift">Gift</Link>
             </div>
 
+
+            {/* Modal form for signUp */}
             <Modal open={isOpen}>
                 <div className="overlay">
                     <div className="popup">
