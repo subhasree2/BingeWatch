@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import MovieDetails from "./components/Details/MovieDetails";
 import PremiereDetails from "./components/Details/PremiereDetails";
+import EventDetails from "./components/Details/EventDetails";
 
 // Lazy loading
 const Main = lazy(() => import("./pages/Main"));
@@ -29,6 +30,7 @@ function App() {
             <Route path="/stream" element={<Stream />} />
             <Route path="/stream/:id" element={<PremiereDetails />} />
             <Route path="/event" element={<Event />} />
+            <Route path="/event/:id" element={<EventDetails />} />
             <Route path="/play" element={<Plays />} />
             <Route path="/sport" element={<Sports />} />
             <Route path="/offers" element={<Offers />} />

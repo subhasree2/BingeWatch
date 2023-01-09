@@ -59,7 +59,7 @@ function Main() {
 
             <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png" className="banner" alt="banner" />
 
-            
+
             {/* Displaying the live events */}
             <h3>The Best of Live Events</h3>
             <Carousel responsive={responsive}>
@@ -102,7 +102,9 @@ function Main() {
                 {OutdoorEvents.map((out) => {
                     return (
                         <div className="Item" key={out.id}>
-                            <img src={out.src} alt="Outdoor Events Img" />
+                            <Link to={`/event/${out.Event}`}>
+                                <img src={out.src} alt="Outdoor Events Img" />
+                            </Link>
                             <span className="Description">{out.Event}</span>
                             <span><i>{out.Place}</i></span>
                         </div>

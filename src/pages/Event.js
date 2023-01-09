@@ -4,6 +4,7 @@ import { Categories } from "../components/Filters/Categories";
 import { MoreFilters } from "../components/Filters/More-Filters";
 import { Price } from "../components/Filters/Price";
 import OutdoorEvents from "../store/Outdoor-Events";
+import { Link } from "react-router-dom";
 
 function Event() {
     return (
@@ -23,7 +24,9 @@ function Event() {
                 {OutdoorEvents.map((event) => {
                     return (
                         <div className="Item" key={event.id}>
-                            <img src={event.src} alt="Events Img" />
+                            <Link to={`/event/${event.Event}`}>
+                                <img src={event.src} alt="Events Img" />
+                            </Link>
                         </div>
                     );
                 })}

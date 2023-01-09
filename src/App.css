@@ -347,3 +347,33 @@ h6 {
   margin-right: 5%;
   margin-left: 3%;
 }
+
+/* Styling the Events Page */
+.Frame {
+  display: flex;
+  background-color: rgb(31, 37, 51);
+  justify-content: center;
+  align-items: center;
+}
+
+.Frame .Banner img {
+  height: 550px;
+  width: 550px;
+}
+
+.Frame .Content {
+  border: 12px inset white;
+  margin: 2%;
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
+
+.Frame button {
+  background-color: red;
+  color: white;
+  border: none;
+  width: 200px;
+  margin: 2%;
+  cursor: pointer;
+}
