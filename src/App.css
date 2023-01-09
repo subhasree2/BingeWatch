@@ -357,8 +357,9 @@ h6 {
 }
 
 .Frame .Banner img {
-  height: 550px;
-  width: 550px;
+  height: 520px;
+  margin: 20px;
+  width: 450px;
 }
 
 .Frame .Content {
