@@ -340,3 +340,10 @@ h6 {
   margin-right: 30px;
   margin-bottom: 10px;
 }
+
+.Events .Item img {
+  height: 350px;
+  width: 250px;
+  margin-right: 5%;
+  margin-left: 3%;
+}

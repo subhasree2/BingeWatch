@@ -103,7 +103,7 @@ function Main() {
                     return (
                         <div className="Item" key={out.id}>
                             <img src={out.src} alt="Outdoor Events Img" />
-                            <span className="Description">{out.id}</span>
+                            <span className="Description">{out.Event}</span>
                             <span><i>{out.Place}</i></span>
                         </div>
                     );
