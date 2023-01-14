@@ -8,7 +8,7 @@ export const Navbar = () => {
     const navigate = useNavigate();
     const [isOpen, setOpen] = useState(false);
 
-    // Sign In 
+    // Sign In With Google
     const SignInWithGoogle = async () => {
         await signInWithPopup(auth, provider);
         setOpen(false);
@@ -29,9 +29,11 @@ export const Navbar = () => {
                 <input type="search" placeholder="Search for Movies, Events, Plays, Sports and Activities" />
                 <span>{auth.currentUser?.displayName}</span>
                 <span className="place">Chennai</span>
-                {!auth.currentUser?.displayName ?
-                    <button id="SignIn" onClick={() => setOpen(true)}>Sign In</button> :
-                    <button id="SignIn" onClick={() => signUserOut}>Logout</button>
+                {!auth.currentUser?.displayName &&
+                    <button id="SignIn" onClick={() => setOpen(true)}>Sign In</button>
+                }
+                {auth.currentUser &&
+                    <button id="SignIn" onClick={signUserOut}>LogOut</button>
                 }
             </div>
 
